@@ -1,0 +1,22 @@
+POST http://127.0.0.1:8000/api/token/
+Content-Type: application/json
+
+{
+    "username": "kareem",
+    "password": "kareem"
+}
+
+
+###
+POST http://127.0.0.1:8000/tasks/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQyOTE3NjI3LCJpYXQiOjE3NDI5MTczMjcsImp0aSI6IjU2YzFkOTI5ODQ3OTRlODI5MDc4NmY4N2E0Y2IzNDk5IiwidXNlcl9pZCI6Mn0.WIAxCPbZCUq9JczOHZyR4rkNs9fyJWFBLE0AU0pHDAA
+Content-Type: application/json
+
+{
+    "name": "This Is A Kareem Task Sent By HTTP FIle",
+    "topic": 1,
+    "expire": "2025-03-30"
+}
+
+
+
