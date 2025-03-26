@@ -1,0 +1,8 @@
+POST http://0.0.0.0:8000/register/
+Content-Type: application/json
+
+{
+    "username": "omar",
+    "password": "omar",
+    "email": "omar@emad.com"
+}
