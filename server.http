@@ -8,13 +8,20 @@ Content-Type: application/json
 
 
 ###
+POST http://127.0.0.1:8000/api/token/refresh/
+Content-Type: application/json
+
+{
+    "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc0MzA5MDk0NywiaWF0IjoxNzQzMDA0NTQ3LCJqdGkiOiJiMTc4ODBiMjdkYTc0M2E2YWMyMGZiYTg0NjY2ODZjNCIsInVzZXJfaWQiOjF9.QC1WZXbnl382voWL4xiY4PZbV4gjaPSlTqszDpPUpuk"
+}
+
+###
 POST http://127.0.0.1:8000/tasks/
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQyOTkwMjI2LCJpYXQiOjE3NDI5ODk5MjYsImp0aSI6ImMzZmQyYjRkNjM4YTQ3NTE4NGNiNDhlNDE4NjFmNTFiIiwidXNlcl9pZCI6MX0.eUPHENkp9iO13xvbA9n6-YYbAB5JDzAQbjy26N4oqGI
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQzMDAyODAyLCJpYXQiOjE3NDMwMDI1MDIsImp0aSI6IjIzZTExOWY4ZDlkYTRiZjZiMzg4MThlNzY3N2M4MjBiIiwidXNlcl9pZCI6MX0.7pVrlgeHEshnegBorYPbzyLqq46O52TA-5G-d5Y9PUs
 Content-Type: application/json
 
 {
     "name": "New Topic By Omar",
-    "topic_id": 1,
     "expire": "2025-03-30"
 }
 

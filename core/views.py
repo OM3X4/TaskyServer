@@ -45,7 +45,12 @@ def topicListCreate(request):
         serial = TopicSerializer(data=request.data)
         if serial.is_valid():
             serial.save(user=request.user)
+
+            topics = Topic.objects.filter(user=request.user)
+            serial = TopicSerializer(topics , many=True)
+
             return Response(serial.data , status=status.HTTP_201_CREATED)
+
         return Response(serial.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
